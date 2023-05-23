@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # https://github.com/prometheus/mysqld_exporter/releases/download/v0.14.0/mysqld_exporter-0.14.0.linux-amd64.tar.gz
-mkdir -p ~/prometheus/mysql_export
+# dashboardId: 7362
+mkdir -p /opt/prometheus/
+cd /opt/prometheus
 tar -xvf mysqld_exporter-0.14.0.linux-amd64.tar.gz
 cd mysqld_exporter-0.14.0.linux-amd64
 

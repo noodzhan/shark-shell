@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 # 安装prometheus node_exporter
-mkdir -p ~/prometheus/node_exporter
+# dashboardId：8919
+mkdir -p /opt/prometheus/
+cd /opt/prometheus/
 wget https://github.com/prometheus/node_exporter/releases/download/v0.17.0/node_exporter-0.17.0.linux-amd64.tar.gz
-cd ~/prometheus/node_exporter
-tar xvfz node_exporter-0.17.0.linux-amd64.tar.gz
+tar xvf node_exporter-0.17.0.linux-amd64.tar.gz
 cd node_exporter-0.17.0.linux-amd64
 nohup ./node_exporter &
 # 开放端口
