@@ -7,19 +7,16 @@ wget https://dl.min.io/server/minio/release/linux-amd64/minio
 chmod +x minio
 sudo mv minio /usr/local/bin
 
-userdel minio
-groupdel minio
+#userdel minio
+#groupdel minio
 groupadd -r minio
 useradd -M -r -g minio minio
 
 rm -rf /opt/minio/data
 mkdir -p /opt/minio/data
+cp ./start.sh /opt/minio
+chmod 777 /opt/minio/start.sh
 chown -R minio:minio /opt/minio/data
-
-# 配置文件
-cp ./minio.env /etc/default
-mv /etc/default/minio.env /etc/default/minio
-
 
 # 设置service
 cp ./minio.service /etc/systemd/system
