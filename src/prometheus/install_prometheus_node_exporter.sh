@@ -4,7 +4,7 @@
 # dashboardId：8919
 mkdir -p /opt/prometheus/
 cd /opt/prometheus/
-wget https://github.com/prometheus/node_exporter/releases/download/v0.17.0/node_exporter-0.17.0.linux-amd64.tar.gz
+wget https://www.noodb.com/resource/software/node_exporter-0.17.0.linux-amd64.tar.gz
 tar xvf node_exporter-0.17.0.linux-amd64.tar.gz
 cd node_exporter-0.17.0.linux-amd64
 nohup ./node_exporter &

@@ -4,7 +4,7 @@
 # 安装prometheus node_exporter
 mkdir -p /opt/prometheus/
 cd /opt/prometheus/
-wget https://github.com/prometheus-community/postgres_exporter/releases/download/v0.12.0/postgres_exporter-0.12.0.linux-amd64.tar.gz
+wget https://www.noodb.com/resource/software/postgres_exporter-0.12.0.linux-amd64.tar.gz
 tar xvf postgres_exporter-0.12.0.linux-amd64.tar.gz
 cd postgres_exporter-0.12.0.linux-amd64
 export DATA_SOURCE_NAME="postgresql://postgres:postgres@localhost:5432/thingsboard?sslmode=disable"

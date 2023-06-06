@@ -3,6 +3,7 @@
 # dashboardId: 7362
 mkdir -p /opt/prometheus/
 cd /opt/prometheus
+wget https://www.noodb.com/resource/software/mysqld_exporter-0.14.0.linux-amd64.tar.gz
 tar -xvf mysqld_exporter-0.14.0.linux-amd64.tar.gz
 cd mysqld_exporter-0.14.0.linux-amd64
 

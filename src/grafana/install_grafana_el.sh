@@ -7,5 +7,7 @@ sudo cp ./config/grafana.ini /etc/grafana/
 
 sudo systemctl start grafana-server
 
+sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT
+
 #http://192.168.1.131:3000/
 
