@@ -60,7 +60,7 @@ filebeat.inputs:
 - type: log
   enabled: true
   paths:
-    - /opt/apexapp/services/logs/wuxingshan/info.log
+    - /opt/apexapp/services/logs/wuxingshan/sys-info.log
   fields: 
     application: wuxingshan
 
@@ -88,7 +88,7 @@ filebeat.inputs:
   # for Java Stack Traces or C-Line Continuation
 
   # The regexp Pattern that has to be matched. The example pattern matches all lines starting with [
-  multiline.pattern: '^\['
+  multiline.pattern: '^[0-9]{4}?[0-9]{2}'
 
   # Defines if the pattern set under pattern should be negated or not. Default is false.
   multiline.negate: true
@@ -98,6 +98,65 @@ filebeat.inputs:
   # Note: After is the equivalent to previous and before is the equivalent to to next in Logstash
   multiline.match: after
 
+- type: log
+  enabled: true
+  paths:
+    - /opt/apexapp/services/logs/servicecenter/sys-info.log
+  fields:
+    application: servicecenter
+  multiline.pattern: '^[0-9]{2}?[0-9]{2}'
+  multiline.negate: true
+  multiline.match: after
+
+- type: log
+  enabled: true
+  paths:
+    - /opt/apexapp/services/logs/logaudit/sys-info.log
+  fields:
+    application: logaudit
+  multiline.pattern: '^[0-9]{4}?[0-9]{2}'
+  multiline.negate: true
+  multiline.match: after
+
+- type: log
+  enabled: true
+  paths:
+    - /opt/apexapp/services/logs/operation/info.log
+  fields:
+    application: operation
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+
+- type: log
+  enabled: true
+  paths:
+    - /opt/apexapp/services/nanshan/log/nanshan/sys-info.log
+  fields:
+    application: nanshan
+  multiline.pattern: '^[0-9]{4}?[0-9]{2}'
+  multiline.negate: true
+  multiline.match: after
+
+- type: log
+  enabled: true
+  paths:
+    - /opt/apexapp/services/shuiliandong/logs/info.log
+  fields:
+    application: shuiliandong
+  multiline.pattern: '^[0-9]{2}?[0-9]{2}'
+  multiline.negate: true
+  multiline.match: after
+
+- type: log
+  enabled: true
+  paths:
+    - /opt/apexapp/services/workflow/logs/workflow_info.log
+  fields:
+    application: workflow
+  multiline.pattern: '^[0-9]{4}?[0-9]{2}'
+  multiline.negate: true
+  multiline.match: after
 
 #============================= Filebeat modules ===============================
 
