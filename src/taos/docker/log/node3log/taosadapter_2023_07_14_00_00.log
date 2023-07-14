@@ -1,0 +1,12 @@
+07/14 02:26:45.431509 00000033 TAOS_ADAPTER info "start server:00000033" model=main
+07/14 02:26:45.431686 00000033 TAOS_ADAPTER info "init plugin collectd/v1" model=plugin
+07/14 02:26:45.432139 00000033 TAOS_ADAPTER info "collectd disabled" model=collectd
+07/14 02:26:45.432147 00000033 TAOS_ADAPTER info "init plugin influxdb/v1" model=plugin
+07/14 02:26:45.432228 00000033 TAOS_ADAPTER info "init plugin node_exporter/v1" model=plugin
+07/14 02:26:45.434910 00000033 TAOS_ADAPTER info "node_exporter disabled" model=NodeExporter
+07/14 02:26:45.434930 00000033 TAOS_ADAPTER info "init plugin opentsdb/v1" model=plugin
+07/14 02:26:45.435142 00000033 TAOS_ADAPTER info "init plugin opentsdb_telnet/v1" model=plugin
+07/14 02:26:45.436347 00000033 TAOS_ADAPTER info "opentsdb_telnet disabled" model=opentsdb_telnet
+07/14 02:26:45.436360 00000033 TAOS_ADAPTER info "init plugin prometheus/v1" model=plugin
+07/14 02:26:45.436448 00000033 TAOS_ADAPTER info "init plugin statsd/v1" model=plugin
+07/14 02:26:45.437706 00000033 TAOS_ADAPTER info "statsd disabled" model=statsd

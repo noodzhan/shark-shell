@@ -1,0 +1,204 @@
+==================================================
+                new log file                      
+==================================================
+==================================================
+                new log file                      
+==================================================
+==================================================
+                new log file                      
+==================================================
+==================================================
+                new log file                      
+==================================================
+==================================================
+                new log file                      
+==================================================
+07/14 10:26:45.760155 00000054 UDF ERROR can not spawn udfd. path: /udfd, error: no such file or directory
+07/14 10:26:45.769032 00000045 DND ERROR failed to start udfd
+07/14 02:26:45.756131 00000045 UTL apoll url not load
+07/14 02:26:45.756159 00000045 UTL load from cfg file /etc/taos//taos.cfg success
+07/14 02:26:45.756164 00000045 UTL failed to load env file: .env
+07/14 02:26:45.756166 00000045 UTL load from env variables cfg success
+07/14 10:26:45.756233 00000045 UTL                      global config
+07/14 10:26:45.756235 00000045 UTL =================================================================
+07/14 10:26:45.756237 00000045 UTL cfg_file     firstEp                  taosnode1:6030
+07/14 10:26:45.756239 00000045 UTL cfg_file     secondEp                 taosnode2:7030
+07/14 10:26:45.756240 00000045 UTL cfg_file     fqdn                     taosnode2
+07/14 10:26:45.756241 00000045 UTL cfg_file     serverPort               7030
+07/14 10:26:45.756243 00000045 UTL default      tempDir                  /tmp/
+07/14 10:26:45.756244 00000045 UTL default      minimalTmpDirGB          1.00
+07/14 10:26:45.756247 00000045 UTL default      shellActivityTimer       3
+07/14 10:26:45.756249 00000045 UTL default      compressMsgSize          -1
+07/14 10:26:45.756250 00000045 UTL default      compressColData          -1
+07/14 10:26:45.756251 00000045 UTL default      queryPolicy              1
+07/14 10:26:45.756252 00000045 UTL default      enableQueryHb            0
+07/14 10:26:45.756253 00000045 UTL default      querySmaOptimize         0
+07/14 10:26:45.756255 00000045 UTL default      queryPlannerTrace        0
+07/14 10:26:45.756256 00000045 UTL default      queryNodeChunkSize       32768
+07/14 10:26:45.756257 00000045 UTL default      queryUseNodeAllocator    1
+07/14 10:26:45.756258 00000045 UTL default      keepColumnName           0
+07/14 10:26:45.756259 00000045 UTL default      smlChildTableName        
+07/14 10:26:45.756260 00000045 UTL default      smlTagName               _tag_null
+07/14 10:26:45.756262 00000045 UTL default      smlDataFormat            0
+07/14 10:26:45.756263 00000045 UTL default      maxMemUsedByInsert       1024
+07/14 10:26:45.756264 00000045 UTL default      numOfTaskQueueThreads    4
+07/14 10:26:45.756265 00000045 UTL default      dataDir                  /var/lib/taos/
+07/14 10:26:45.756266 00000045 UTL default      minimalDataDirGB         2.00
+07/14 10:26:45.756268 00000045 UTL default      supportVnodes            6
+07/14 10:26:45.756269 00000045 UTL default      maxShellConns            50000
+07/14 10:26:45.756270 00000045 UTL default      statusInterval           1
+07/14 10:26:45.756271 00000045 UTL default      minSlidingTime           10
+07/14 10:26:45.756272 00000045 UTL default      minIntervalTime          1
+07/14 10:26:45.756273 00000045 UTL default      maxNumOfDistinctRes      10000000
+07/14 10:26:45.756274 00000045 UTL default      countAlwaysReturnValue   1
+07/14 10:26:45.756276 00000045 UTL default      queryBufferSize          -1
+07/14 10:26:45.756277 00000045 UTL default      printAuth                0
+07/14 10:26:45.756278 00000045 UTL default      queryRspPolicy           0
+07/14 10:26:45.756279 00000045 UTL default      numOfRpcThreads          1
+07/14 10:26:45.756280 00000045 UTL default      numOfCommitThreads       2
+07/14 10:26:45.756281 00000045 UTL default      numOfMnodeReadThreads    1
+07/14 10:26:45.756282 00000045 UTL default      numOfVnodeQueryThreads   6
+07/14 10:26:45.756284 00000045 UTL default      numOfVnodeStreamThreads  4
+07/14 10:26:45.756285 00000045 UTL default      numOfVnodeFetchThreads   4
+07/14 10:26:45.756286 00000045 UTL default      numOfVnodeWriteThreads   3
+07/14 10:26:45.756287 00000045 UTL default      numOfVnodeSyncThreads    16
+07/14 10:26:45.756288 00000045 UTL default      numOfVnodeRsmaThreads    4
+07/14 10:26:45.756289 00000045 UTL default      numOfQnodeQueryThreads   6
+07/14 10:26:45.756290 00000045 UTL default      numOfSnodeSharedThreads  2
+07/14 10:26:45.756292 00000045 UTL default      numOfSnodeUniqueThreads  2
+07/14 10:26:45.756293 00000045 UTL default      rpcQueueMemoryAllowed    778672947
+07/14 10:26:45.756295 00000045 UTL default      monitor                  1
+07/14 10:26:45.756296 00000045 UTL default      monitorInterval          30
+07/14 10:26:45.756299 00000045 UTL default      monitorFqdn              
+07/14 10:26:45.756300 00000045 UTL default      monitorPort              6043
+07/14 10:26:45.756301 00000045 UTL default      monitorMaxLogs           100
+07/14 10:26:45.756302 00000045 UTL default      monitorComp              0
+07/14 10:26:45.756303 00000045 UTL default      telemetryReporting       1
+07/14 10:26:45.756304 00000045 UTL default      telemetryInterval        43200
+07/14 10:26:45.756306 00000045 UTL default      telemetryServer          telemetry.taosdata.com
+07/14 10:26:45.756307 00000045 UTL default      telemetryPort            80
+07/14 10:26:45.756308 00000045 UTL default      transPullupInterval      2
+07/14 10:26:45.756309 00000045 UTL default      mqRebalanceInterval      2
+07/14 10:26:45.756310 00000045 UTL default      ttlUnit                  86400
+07/14 10:26:45.756311 00000045 UTL default      ttlPushInterval          86400
+07/14 10:26:45.756312 00000045 UTL default      uptimeInterval           300
+07/14 10:26:45.756314 00000045 UTL default      queryRsmaTolerance       1000
+07/14 10:26:45.756315 00000045 UTL default      walFsyncDataSizeLimit    104857600
+07/14 10:26:45.756316 00000045 UTL default      udf                      1
+07/14 10:26:45.756317 00000045 UTL default      udfdResFuncs             
+07/14 10:26:45.756318 00000045 UTL default      udfdLdLibPath            
+07/14 10:26:45.756319 00000045 UTL default      configDir                /etc/taos/
+07/14 10:26:45.756321 00000045 UTL default      scriptDir                /etc/taos/
+07/14 10:26:45.756322 00000045 UTL default      logDir                   /var/log/taos/
+07/14 10:26:45.756323 00000045 UTL default      minimalLogDirGB          1.00
+07/14 10:26:45.756324 00000045 UTL default      numOfLogLines            10000000
+07/14 10:26:45.756325 00000045 UTL default      asyncLog                 1
+07/14 10:26:45.756326 00000045 UTL default      logKeepDays              0
+07/14 10:26:45.756328 00000045 UTL default      debugFlag                0
+07/14 10:26:45.756329 00000045 UTL default      simDebugFlag             143
+07/14 10:26:45.756330 00000045 UTL default      tmrDebugFlag             131
+07/14 10:26:45.756331 00000045 UTL default      uDebugFlag               131
+07/14 10:26:45.756332 00000045 UTL default      rpcDebugFlag             131
+07/14 10:26:45.756333 00000045 UTL default      jniDebugFlag             131
+07/14 10:26:45.756334 00000045 UTL default      qDebugFlag               131
+07/14 10:26:45.756336 00000045 UTL default      cDebugFlag               131
+07/14 10:26:45.756337 00000045 UTL default      dDebugFlag               135
+07/14 10:26:45.756338 00000045 UTL default      vDebugFlag               135
+07/14 10:26:45.756339 00000045 UTL default      mDebugFlag               135
+07/14 10:26:45.756340 00000045 UTL default      wDebugFlag               135
+07/14 10:26:45.756342 00000045 UTL default      sDebugFlag               135
+07/14 10:26:45.756343 00000045 UTL default      tsdbDebugFlag            131
+07/14 10:26:45.756344 00000045 UTL default      tqDebugFlag              135
+07/14 10:26:45.756345 00000045 UTL default      fsDebugFlag              135
+07/14 10:26:45.756346 00000045 UTL default      udfDebugFlag             135
+07/14 10:26:45.756347 00000045 UTL default      smaDebugFlag             131
+07/14 10:26:45.756348 00000045 UTL default      idxDebugFlag             135
+07/14 10:26:45.756349 00000045 UTL default      tdbDebugFlag             131
+07/14 10:26:45.756350 00000045 UTL default      metaDebugFlag            135
+07/14 10:26:45.756352 00000045 UTL cfg_file     timezone                 UTC-8 (UTC, +0800)
+07/14 10:26:45.756353 00000045 UTL cfg_file     locale                   en_US.UTF-8
+07/14 10:26:45.756354 00000045 UTL cfg_file     charset                  UTF-8
+07/14 10:26:45.756356 00000045 UTL default      enableCoreFile           1
+07/14 10:26:45.756357 00000045 UTL default      numOfCores               3.00
+07/14 10:26:45.756358 00000045 UTL default      openMax                  1048576
+07/14 10:26:45.756360 00000045 UTL default      streamMax                16
+07/14 10:26:45.756362 00000045 UTL default      pageSizeKB               4
+07/14 10:26:45.756363 00000045 UTL default      totalMemoryKB            7604228
+07/14 10:26:45.756364 00000045 UTL default      os sysname               Linux
+07/14 10:26:45.756365 00000045 UTL default      os nodename              taosnode2
+07/14 10:26:45.756366 00000045 UTL default      os release               6.1.19-7.0.0.17.oe2303.x86_64
+07/14 10:26:45.756367 00000045 UTL default      os version               #1 SMP PREEMPT_DYNAMIC Tue Mar 28 00:01:02 CST 2023
+07/14 10:26:45.756369 00000045 UTL default      os machine               x86_64
+07/14 10:26:45.756370 00000045 UTL default      version                  3.0.1.6
+07/14 10:26:45.756371 00000045 UTL default      compatible_version       3.0.0.0
+07/14 10:26:45.756372 00000045 UTL default      gitinfo                  f09c7eed5d8296a5c50255041ff10e337e04839e
+07/14 10:26:45.756373 00000045 UTL default      buildinfo                Built at 2022-11-04 17:34
+07/14 10:26:45.756374 00000045 UTL =================================================================
+07/14 10:26:45.757319 00000045 DND start to init dnode env
+07/14 10:26:45.757353 00000045 DND start to create dnode
+07/14 10:26:45.757381 00000045 DND reset dnode list on startup
+07/14 10:26:45.757383 00000045 DND print dnode list, num:1
+07/14 10:26:45.757384 00000045 DND dnode:0, fqdn:taosnode1 port:6030 isMnode:1
+07/14 10:26:45.757394 00000045 DND node:dnode, required to startup
+07/14 10:26:45.757406 00000045 DND succcessed to read file /var/lib/taos//mnode/mnode.json, deployed:0
+07/14 10:26:45.757408 00000045 DND node:mnode, does not require startup
+07/14 10:26:45.757410 00000045 DND node:vnode, required to startup
+07/14 10:26:45.757415 00000045 DND node:qnode, does not require startup
+07/14 10:26:45.757418 00000045 DND node:snode, does not require startup
+07/14 10:26:45.757460 00000045 DND lock file:/var/lib/taos//.running to prevent repeated starts
+07/14 10:26:45.757646 00000045 DND dnode rpc server is initialized
+07/14 10:26:45.758005 00000045 DND dnode rpc client is initialized
+07/14 10:26:45.759136 00000045 DND step:dnode-transport, initialized
+07/14 10:26:45.759139 00000045 DND dnode is created, ptr:0x9c87e0
+07/14 10:26:45.759140 00000045 DND dnode env is initialized
+07/14 10:26:45.759143 00000045 DND start to init service
+07/14 10:26:45.759197 00000045 DND node:dnode, start to open
+07/14 10:26:45.759202 00000045 UTL worker:dnode-mgmt is initialized, min:1 max:1
+07/14 10:26:45.759260 00000045 DND dnode workers are initialized
+07/14 10:26:45.759343 00000054 UDF start to init udfd
+07/14 10:26:45.759354 00000054 UDF udfd LD_LIBRARY_PATH: ::/usr/lib
+07/14 10:26:45.769023 00000045 UDF udfd is cleaned up after spawn err
+07/14 10:26:45.778033 00000045 DND node:dnode, has been opened
+07/14 10:26:45.778044 00000045 DND step:dnode, openned
+07/14 10:26:45.778115 00000045 DND node:vnode, start to open
+07/14 10:26:45.778157 00000045 TFS disk /var/lib/taos is mounted to tier level 0 id 0
+07/14 10:26:45.778163 00000045 DND step:vnode-tfs, initialized
+07/14 10:26:45.778213 00000045 WAL wal thread is launched, thread:0x7f31c66e3700
+07/14 10:26:45.778218 00000045 WAL wal module is initialized, rsetId:3
+07/14 10:26:45.778221 00000045 DND step:vnode-wal, initialized
+07/14 10:26:45.778370 00000045 SYN sync rsetId:4 is open
+07/14 10:26:45.778373 00000045 DND step:vnode-sync, initialized
+07/14 10:26:45.778551 00000045 DND step:vnode-commit, initialized
+07/14 10:26:45.778553 00000045 UTL worker:vnode-query is initialized, min:6 max:6
+07/14 10:26:45.778557 00000045 UTL worker:vnode-stream is initialized, min:4 max:4
+07/14 10:26:45.778562 00000045 UTL worker:vnode-mgmt is initialized, min:1 max:1
+07/14 10:26:45.778599 00000045 DND vnode workers are initialized
+07/14 10:26:45.778600 00000045 DND step:vnode-worker, initialized
+07/14 10:26:45.778620 00000045 DND file /var/lib/taos//vnode/vnodes.json not exist
+07/14 10:26:45.778676 00000045 DND open 0 vnodes with 1 threads
+07/14 10:26:45.778681 00000045 DND successfully opened 0 vnodes
+07/14 10:26:45.778693 00000045 DND step:vnode-vnodes, initialized
+07/14 10:26:45.778700 00000045 UDF get dnodeId:0 from env, pipe path:/var/lib/taos//.udfd.sock.0
+07/14 10:26:45.780049 00000045 UDF udfc initialized
+07/14 10:26:45.780061 00000045 DND node:vnode, has been opened
+07/14 10:26:45.780064 00000045 DND step:vnode, openned
+07/14 10:26:45.780066 00000045 DND dnode status set from init to running
+07/14 10:26:45.780067 00000045 DND node:dnode, start to start
+07/14 10:26:45.780115 00000045 DND step:dnode-status, initialized
+07/14 10:26:45.780152 00000045 DND step:dnode-monitor, initialized
+07/14 10:26:45.780154 00000045 DND node:dnode, has been started
+07/14 10:26:45.780155 00000045 DND step:dnode, started
+07/14 10:26:45.780156 00000045 DND node:vnode, start to start
+07/14 10:26:45.780157 00000045 DND restore 0 vnodes with 1 threads
+07/14 10:26:45.780164 00000045 DND node:vnode, has been started
+07/14 10:26:45.780165 00000045 DND step:vnode, started
+07/14 10:26:45.780165 00000045 DND TDengine initialized successfully
+07/14 10:26:45.780167 00000045 DND step:TDengine, initialized successfully
+07/14 10:26:46.788287 00000063 DND set local info, dnodeId:2 clusterId:6363521337786113280
+07/14 10:26:46.801154 00000063 DND successed to write /var/lib/taos//dnode/dnode.json, dnodeVer:4
+07/14 10:26:46.801168 00000063 DND new dnode list get from mnode, dnodeVer:4
+07/14 10:26:46.801188 00000063 DND print dnode list, num:3
+07/14 10:26:46.801191 00000063 DND dnode:1, fqdn:taosnode1 port:6030 isMnode:1
+07/14 10:26:46.801194 00000063 DND dnode:2, fqdn:taosnode2 port:7030 isMnode:0
+07/14 10:26:46.801197 00000063 DND dnode:3, fqdn:taosnode3 port:8030 isMnode:0
+07/14 10:26:46.811886 00000063 DND successed to write /var/lib/taos//dnode/dnode.json, dnodeVer:4
