@@ -1,8 +1,30 @@
 #!/bin/bash
 
-kafka_alive=$(netstat -tunlp | grep 9092|wc -l)
+KAFKA_LOG_DIR="/tmp/kafka-logs"
+KAFKA_LOG_BAK_DIR="/opt/kafka_log_bak"
 
-if [ $kafka_alive -eq 0 ]; then
-  # 启动
-  systemctl start kafka
+function backup_kafka_logs() {
+  local log_dir="$1"
+  local bak_dir="$2/$(date "+%Y%m%d%H%M%S")"
+
+  mkdir -p "$bak_dir" || { echo "无法创建备份目录: $bak_dir"; exit 1; }
+  cp -r "$log_dir" "$bak_dir" || { echo "备份Kafka日志文件失败"; exit 1; }
+  rm -rf "$log_dir" || { echo "删除Kafka日志文件失败"; exit 1; }
+}
+
+function start_kafka_service() {
+  if systemctl start kafka; then
+    echo "成功启动Kafka服务"
+  else
+    echo "启动Kafka服务失败"
+    backup_kafka_logs "$KAFKA_LOG_DIR" "$KAFKA_LOG_BAK_DIR"
+    exit 1
+  fi
+}
+
+# 检查Kafka是否正在监听9092端口
+kafka_alive=$(netstat -tunlp | grep 9092 | wc -l)
+
+if [ "$kafka_alive" -eq 0 ]; then
+  start_kafka_service
 fi
