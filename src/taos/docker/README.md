@@ -60,3 +60,7 @@ create dnode "taosnode3:8030";
 show dnodes;
 show mnodes; 
 ```
+
+## 关于taos客户端的问题
+
+如果taos客户端，连接不了

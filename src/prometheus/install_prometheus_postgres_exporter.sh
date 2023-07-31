@@ -3,11 +3,12 @@
 # dashboardID 9628
 # 安装prometheus node_exporter
 mkdir -p /opt/prometheus/
+cp ../package/postgres_exporter-0.12.0.linux-amd64.tar.gz /opt/prometheus/
 cd /opt/prometheus/
-wget https://www.noodb.com/resource/software/postgres_exporter-0.12.0.linux-amd64.tar.gz
+#wget https://www.noodb.com/resource/software/postgres_exporter-0.12.0.linux-amd64.tar.gz
 tar xvf postgres_exporter-0.12.0.linux-amd64.tar.gz
 cd postgres_exporter-0.12.0.linux-amd64
-export DATA_SOURCE_NAME="postgresql://postgres:postgres@localhost:5432/thingsboard?sslmode=disable"
+export DATA_SOURCE_NAME="postgresql://postgres:postgres@127.0.0.1:5432/thingsboard?sslmode=disable"
 nohup ./postgres_exporter &
 # 开放端口
 iptables -A INPUT -p tcp --dport 9187 -j ACCEPT

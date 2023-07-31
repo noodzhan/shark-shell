@@ -3,8 +3,9 @@
 # 安装prometheus node_exporter
 # dashboardId：8919
 mkdir -p /opt/prometheus/
+cp ../package/node_exporter-0.17.0.linux-amd64.tar.gz /opt/prometheus/
 cd /opt/prometheus/
-wget https://www.noodb.com/resource/software/node_exporter-0.17.0.linux-amd64.tar.gz
+#wget https://www.noodb.com/resource/software/node_exporter-0.17.0.linux-amd64.tar.gz
 tar xvf node_exporter-0.17.0.linux-amd64.tar.gz
 cd node_exporter-0.17.0.linux-amd64
 nohup ./node_exporter &

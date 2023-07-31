@@ -33,11 +33,11 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-      - targets: [ '172.16.1.41:9104' ]
+      - targets: [ '172.24.20.12:9104' ]
   - job_name: 'node exporter'
     static_configs:
-      - targets: [ 'localhost:9100','172.16.1.41:9100' ]
+      - targets: [ '172.24.20.12:9100','172.24.20.13:9100' ]
 
   - job_name: 'postgres'
     static_configs:
-      - targets: [ '172.16.1.41:9187' ]
+      - targets: [ '172.24.20.13:9187' ]
