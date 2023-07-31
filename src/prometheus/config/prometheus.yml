@@ -41,3 +41,38 @@ scrape_configs:
   - job_name: 'postgres'
     static_configs:
       - targets: [ '172.24.20.13:9187' ]
+
+  - job_name: 'port_listener'
+    metrics_path: /probe
+    params:
+      module: [tcp_connect]
+    static_configs:
+      - targets: ['192.168.0.190:8848']
+        labels:
+          instance: 'nacos'
+          group: 'tcp'
+
+      - targets: ['192.168.0.190:8726']
+        labels:
+          instance: 'weeconfig'
+          group: 'tcp'
+      - targets: ['192.168.0.190:8715']
+        labels:
+          instance: 'baojinnang'
+          group: 'tcp'
+
+      - targets: ['192.168.0.190:8997']
+        labels:
+          instance: 'logaudit'
+          group: 'tcp'
+      - targets: ['192.168.0.190:8702']
+        labels:
+          instance: 'nanshan'
+          group: 'tcp'
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+        #      - source_labels: [__param_target]
+        #        target_label: instance
+      - target_label: __address__
+        replacement: '192.168.0.190:9115'
