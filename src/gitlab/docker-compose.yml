@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    image: gitlab/gitlab-ce:latest
+    restart: always
+    hostname: 'gitlab.example.com'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://gitlab.example.com'
+    ports:
+      - '8080:80'  # 将主机的8080端口映射到GitLab容器的80端口
+      - '8443:443' # 将主机的8443端口映射到GitLab容器的443端口
+      - '2222:22'  # 将主机的2222端口映射到GitLab容器的22端口
+    volumes:
+      - './config:/etc/gitlab'
+      - './logs:/var/log/gitlab'
+      - './data:/var/opt/gitlab'
