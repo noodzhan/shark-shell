@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  calibre-web:
+    image: johngong/calibre-web
+    container_name: calibre-web
+    ports:
+      - "8083:8083"
+    volumes:
+      - "./config:/config"
+      - "./library:/library"
+    environment:
+      - "UID=1000"
+      - "GID=1000"
+
+# admin/admin123

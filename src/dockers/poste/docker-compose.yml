@@ -1,0 +1,14 @@
+version: "3"
+services:
+  poste:
+    image: analogic/poste.io
+    network_mode: host
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./data:/data
+    container_name: poste
+    hostname: mail.noodb.com
+    environment:
+      - HTTP_PORT=180
+      - HTTPS_PORT=1443
+    restart: always
