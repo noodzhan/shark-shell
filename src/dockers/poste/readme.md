@@ -1,3 +1,14 @@
+https://36.150.108.152:1443/admin/
+
+skypr.net 
+admin@skypr.net 
+admin@1234 
+
+## 
+
+## 
+```yml
+
 version: "3"
 services:
   poste:
@@ -21,3 +32,16 @@ services:
       - HTTP_PORT=180
       - HTTPS_PORT=1443
     restart: always
+
+```
+
+## 配置
+
+180和1443 端口是 web端口
+
+"25:25" 端口 是stmp
+"143:143" 端口 是itmp
+
+##  
+
+
