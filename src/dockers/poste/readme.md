@@ -4,7 +4,19 @@ skypr.net
 admin@skypr.net 
 admin@1234 
 
-## 
+## 账号
+
+访问https://xxx:1433/ 会自动跳转到创建账号系统
+
+1、必须要设置DKIM
+
+![](assert/789dab51.png)
+
+2、 必须要开发docker下面的端口
+
+3、 配置域名解析
+
+![](assert/4e9c9149.png)
 
 ## 
 ```yml
