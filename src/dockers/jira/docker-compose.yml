@@ -1,0 +1,37 @@
+# https://github.com/codeclou/docker-atlassian-jira-data-center/blob/master/versions/8.20.5/docker-compose-one-node.yml
+# 查看最新版本
+# https://stackoverflow.com/questions/28320134/how-can-i-list-all-tags-for-a-docker-image-on-a-remote-registry
+# ./dockertags.sh atlassian/jira-software 8.22.3
+# 运行
+# docker-compose up --build
+
+version: "3.2"
+services:
+  portable-jira:
+    image: terwer/jira:8.22.3-ubuntu-jdk11
+    container_name: jira
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    # Allow docker to connect to localhost
+    # network_mode: "host"
+    environment:
+      # 最好使用此设定时区，其它镜像也可以使用，也可以用"TZ=Asia/Shanghai"
+      TZ: CST-8
+      # # Memory / Heap Size
+      # - JVM_MINIMUM_MEMORY=512M
+      # - JVM_MAXIMUM_MEMORY=2048M
+      CATALINA_OPTS: -javaagent:/opt/atlassian/jira/atlassian-agent.jar
+    # volumes:
+    #   - type: bind
+    #     source: ./jira-home
+    #     target: /var/atlassian/application-data/jira
+    volumes:
+      - ./jira-home:/var/atlassian/application-data/jira
+      - ./drivers:/drivers
+    stdin_open: true
+    tty: true
+    restart: "no"
+

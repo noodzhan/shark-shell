@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  mysql: 
+    image: docker.io/mysql:latest
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./etc/:/etc/mysql/conf.d"
+      - ./data:/var/lib/mysql  #挂载目录，持久化存储
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - TZ=Asia/Shanghai

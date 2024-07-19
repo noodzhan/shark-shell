@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mcms:
+    image: mingsoft/mcms
+    container_name: mcms
+    environment:
+      - TZ=Asia/Shanghai
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=mcms
+    command: --sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION" --lower-case-table-names=1 --query-cache-type=1 --query-cache-size=600000 --max-connections=1000
+    ports:
+      #      - "3306:3306"
+      - "8084:8080"
+    privileged: true
+    restart: always
+

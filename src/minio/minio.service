@@ -10,8 +10,8 @@ Type=simple
 
 WorkingDirectory=/usr/local
 
-User=minio
-Group=minio
+User=root
+Group=root
 ProtectProc=invisible
 
 ExecStart=/opt/minio/start.sh

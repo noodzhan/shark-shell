@@ -1,0 +1,8 @@
+version: '3.2'
+services:
+  taos: 
+    image: tdengine/tdengine:3.0.1.4
+    container_name: taosdb 
+    ports:
+      - "6030:6030"
+      - "6041:6041"
