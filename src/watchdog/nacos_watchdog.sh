@@ -3,9 +3,8 @@ set -e
 
 # 配置信息
 install_dir="/usr/local"
-check_url="http://localhost:8726/check"
 nacos_user="nacos"
-nacos_passwd="nacos@haici5"
+nacos_passwd="nacos"
 
 # 检查端口是否处于监听状态
 function check_port() {
