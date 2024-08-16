@@ -6,7 +6,7 @@ size_threshold_gb=1                          # 目录大小阈值（GB）
 size_threshold_mb=$((size_threshold_gb * 1024)) # 将GB转换为MB
 
 # 指定要检测和删除文件的目录列表
-dirs=("/home/yapai/test_log" "/home/yapai/test_log1")
+dirs=("/var/log/nginx/access.log" "/var/log/taos/taos.log")
 
 # 遍历每个目录
 for dir in "${dirs[@]}"; do
