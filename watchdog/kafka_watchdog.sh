@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KAFKA_LOG_DIR="/opt/apexapp/kafka-logs"
+KAFKA_LOG_DIR="/opt/kafka/kafka-logs"
 KAFKA_LOG_BAK_DIR="/opt/kafka_log_bak"
 
 function backup_kafka_logs() {
