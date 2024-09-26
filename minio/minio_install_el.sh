@@ -3,8 +3,8 @@
 # 安装minio
 # 安装位置：/usr/local/bin
 
-#wget https://dl.min.io/server/minio/release/linux-amd64/minio
-cp ../package/minio .
+wget https://dl.min.io/server/minio/release/linux-amd64/minio
+#cp ../package/minio .
 chmod +x minio
 sudo mv minio /usr/local/bin
 
